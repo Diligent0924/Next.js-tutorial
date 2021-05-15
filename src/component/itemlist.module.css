@@ -1,0 +1,32 @@
+.warp{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.img_item{
+    display: block;
+    margin : 0 auto;
+
+}
+
+.item_name{
+    display:-webkit-box;
+    -webkit-line-clamp: 2; /* overflow는 반드시 hidden으로 지정해야하며 2는 라인 수를 지정함 */
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+    width: 160px;
+    margin:10px auto;
+    text-align: center;
+}
+
+.item_category{
+    display:block;
+    color:grey;
+    text-align:center;
+}
+
+.item_price{
+    display:block;
+    color:aqua;
+    text-align:center;
+}

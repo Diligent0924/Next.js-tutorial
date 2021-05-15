@@ -1,0 +1,39 @@
+.wrap{
+    display:flex;
+}
+
+.image{
+    flex: 200px 0 0;
+}
+
+.info_item{
+    display:block;
+    margin-left:30px;
+}
+
+.nametag{
+    font-size:20px;
+    margin: 50px 0 ;
+}
+
+.pricetag{
+    display: block;
+    font-size:40px;
+    color:red;
+    margin: 50px 0;
+}
+
+.buttonAll{
+    display: flex;
+}
+
+.button{
+    height: 50px;
+    width : 200px;
+}
+
+.button_2{
+    height: 50px;
+    width : 200px;
+}
+
