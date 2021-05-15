@@ -1,9 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router'
 
-function MyApp() {
-  render()
-  const {Component, ...other} = this.props;
+function MyApp({Component, pageProps}) {
   const router = useRouter()
 
   /*  function btnclick(){
@@ -15,7 +13,7 @@ function MyApp() {
     <div>
       <p>처음 시작하는 html 코드 테스트</p>
       <button onclick={() => router.push('/about')}>버튼입니다.</button>
-      <Component {...other} />
+      <Component {...PageProps} />
     </div>
   )
 }
