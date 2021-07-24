@@ -7,13 +7,10 @@ export default function Logo(props){
     return(
         <div className={styles.Logo}>
             <Image
-                src='https://react.semantic-ui.com/images/wireframe/image.png'
+                src={props.src}
                 size= {props.size}
                 className ={styles.image}
             />
-            <div className ={styles.text}>
-            {props.text}
-            </div>
         </div>
     )
 }

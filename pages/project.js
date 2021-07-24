@@ -1,28 +1,19 @@
-import React from 'react'
-import { Grid, Image } from 'semantic-ui-react'
-import styles from './css/project.module.css'
+import React from 'react';
+import Grid from '../src/component/project_grid';
+import {Image, Divider} from 'semantic-ui-react'
 
-export default function About(){
+
+export default function Project(){
     return(
-        <div className={styles.project}>
-            <Grid columns={1} divided>
-                <Grid.Row>
-                    <Grid.Column>
-                        <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
-                        1번째 project입니다.
-                    </Grid.Column>
-                </Grid.Row>
-                <Grid.Row>
-                    <Grid.Column>
-                    <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
-                    </Grid.Column>
-                </Grid.Row>
-                <Grid.Row>
-                    <Grid.Column>
-                        <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
+        <div>
+            <Grid visible = 'https://react.semantic-ui.com/images/wireframe/square-image.png' hidden = 'https://react.semantic-ui.com/images/avatar/large/ade.jpg' percent = '20'
+             text = '1. This is '/>
+            <Divider />
+            <Grid visible = 'https://react.semantic-ui.com/images/wireframe/square-image.png' hidden = 'https://react.semantic-ui.com/images/avatar/large/ade.jpg' percent = '10'
+             text = 'ddd'/>
+            <Divider />
+            <Grid visible = 'https://react.semantic-ui.com/images/wireframe/square-image.png' hidden = 'https://react.semantic-ui.com/images/avatar/large/ade.jpg' percent = '8'
+             text = 'ddd'/>
         </div>
     )
 }

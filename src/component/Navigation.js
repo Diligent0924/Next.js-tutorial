@@ -1,23 +1,33 @@
 import 'semantic-ui-css/semantic.min.css'
 import { useRouter } from "next/router";
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import { Icon, Menu } from 'semantic-ui-react'
 import styles from '../component_css/Navigation.module.css'
 
 export default function Navigation() {
   const router = useRouter();
+  const [color, setcolor] = useState("");
   let activeItem;
 
   return (
-      <Menu compact icon='labeled' vertical className={styles.Menu}>
+    <div className={styles.navigation}>
+    <Menu secondary className={styles.menu}>
         <Menu.Item
-          name='Introduce'
-          active={activeItem === 'Introduce'}
-          onClick={() => router.push("/Introduce")}
-          className={styles.item}
-        >
-          <Icon name='user secret' />
-          Introduce
+            name='Home'
+            active={activeItem === 'Home'}
+            onClick={() => router.push("/")}
+            className={styles.item}
+          >
+            <Icon name='user secret' />
+        </Menu.Item>
+        <Menu.Item
+            name='Introduce'
+            active={activeItem === 'Introduce'}
+            onClick={() => router.push("/Introduce")}
+            className={styles.item}
+          >
+            <Icon name='user secret' />
+            Introduce
         </Menu.Item>
 
         <Menu.Item
@@ -40,14 +50,15 @@ export default function Navigation() {
         </Menu.Item>
 
         <Menu.Item
-          name='address book'
-          active={activeItem === 'address book'}
-          onClick={() => router.push("/")}
+          name='Contact'
+          active={activeItem === 'Contact'}
+          onClick={() => router.push("/contact")}
           className={styles.item}
         >
           <Icon name='address book' />
           Contact
         </Menu.Item>
-      </Menu>  
+    </Menu>  
+    </div>
   );
 }

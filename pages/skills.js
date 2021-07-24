@@ -1,9 +1,18 @@
 import React from 'react'
-import { Card, Placeholder } from 'semantic-ui-react'
 import styles from './css/skills.module.css'
 import Description from '../src/component/Introduce_description';
+import Logo from '../src/component/Logo'
+import SemiNavigation from '../src/component/SemiNavigation'
 
 export default function Skill(){
+    const data = ["Design","Front-End","Back-End"]
+
+    const list = data.map((name) => 
+        <li>{name}</li>
+    )
+
+    const a = "a"
+
     return(
     <>    
         <div className = {styles.a}>
@@ -11,25 +20,7 @@ export default function Skill(){
                 text = "Design, Front-End, Back-End"
              />
         </div>
-        <div>
-        <Card.Group itemsPerRow={3}>
-            <Card>
-            <Card.Content>
-                ddd
-            </Card.Content>
-            </Card>
-            <Card>
-            <Card.Content>
-                dddd
-            </Card.Content>
-            </Card>
-            <Card>
-            <Card.Content>
-                dddd
-            </Card.Content>
-            </Card>
-        </Card.Group>
-        </div>
+        <SemiNavigation data={data}/>
     </>    
     )
 }

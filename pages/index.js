@@ -1,11 +1,21 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import React from 'react'
+import { Button } from 'semantic-ui-react'
+import styles from './css/home.module.css'
+import Description from '../src/component/Introduce_description';
+import { useRouter } from "next/router";
+
 
 export default function Home() {
+  const router = useRouter()
+
   return (
-    <div>
-      index.js position
-    </div>
+    <>
+      <div className={styles.description}>
+      <Description header="Hi, I'm Yong Chan Park" click = "/Introduce" buttontext = "view my portfolio">
+          Design and Full-stack Depveloper Aspirant
+      </Description>
+      </div>
+    </>
   )
 }

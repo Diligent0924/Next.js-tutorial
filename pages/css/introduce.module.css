@@ -1,20 +1,8 @@
-.introduce{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.description_1{
-    text-align: center;
-    height: 500px;
-    padding-top: 100px;
-}
-
 .text{
     margin-top: 20px;
     padding-left: 10px;
 }
 
 .text:nth-child(1){
-    border-left: 1px solid rgb(164, 162, 162);
-    border-right: 1px solid rgb(164, 162, 162);
+    height: 350px;
 }
